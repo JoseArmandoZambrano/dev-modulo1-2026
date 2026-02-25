@@ -1,0 +1,65 @@
+/* Reset básico para evitar márgenes y rellenos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;   /* Fuente limpia y legible */
+  background-color: #f9f9f9;        /* Color de fondo claro */
+  color: #333;                      /* Color de texto principal */
+  line-height: 1.6;                 /* Espaciado entre líneas */
+  padding: 20px;                    /* Espacio interno alrededor */
+}
+
+/* Encabezado principal */
+header {
+  background-color: #2c3e50;        /* Fondo oscuro */
+  color: white;                     /* Texto en blanco */
+  text-align: center;               /* Centrado horizontal */
+  padding: 20px;                    /* Espacio interno */
+  border-radius: 8px;               /* Bordes redondeados */
+}
+
+/* Títulos dentro del contenido */
+h2 {
+  color: #2c3e50;                   /* Color consistente con el header */
+  margin-bottom: 10px;              /* Separación respecto al texto */
+}
+
+/* Secciones */
+section {
+  margin: 20px 0;                   /* Espacio entre secciones */
+  padding: 10px;                    /* Espacio interno */
+  background-color: #fff;           /* Fondo blanco para contraste */
+  border: 1px solid #ddd;           /* Borde gris claro */
+  border-radius: 6px;               /* Bordes suaves */
+}
+
+/* Listas de hobbies */
+ul {
+  list-style-type: square;          /* Viñetas cuadradas */
+  padding-left: 20px;               /* Espacio a la izquierda */
+}
+
+li {
+  margin-bottom: 5px;               /* Separación entre elementos */
+}
+
+/* Imagen */
+img {
+  display: block;                   /* Evita que quede alineada con texto */
+  margin: 0 auto;                   /* Centra la imagen */
+  border-radius: 10px;              /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+}
+
+/* Pie de página */
+footer {
+  text-align: center;               /* Centrado */
+  margin-top: 30px;                 /* Separación del contenido */
+  font-size: 0.9em;                 /* Texto un poco más pequeño */
+  color: #777;                      /* Gris tenue */
+}
