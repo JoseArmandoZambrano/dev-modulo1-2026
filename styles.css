@@ -1,65 +1,195 @@
-/* Reset básico para evitar márgenes y rellenos por defecto */
+/* =============================================
+   RESET BÁSICO
+   Elimina márgenes y rellenos por defecto
+   del navegador en todos los elementos
+============================================= */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* El padding y border no agrandan el elemento */
 }
 
-/* Estilo general del cuerpo de la página */
+
+/* =============================================
+   BODY — Estilo general de la página
+   Propiedades usadas: font-family, background-color,
+   color, line-height, padding
+============================================= */
 body {
-  font-family: Arial, sans-serif;   /* Fuente limpia y legible */
-  background-color: #f9f9f9;        /* Color de fondo claro */
-  color: #333;                      /* Color de texto principal */
-  line-height: 1.6;                 /* Espaciado entre líneas */
-  padding: 20px;                    /* Espacio interno alrededor */
+  font-family: Arial, sans-serif;   /* Fuente legible como respaldo */
+  background-color: #f0f4f8;        /* Fondo azul muy claro */
+  color: #333333;                   /* Color de texto principal */
+  line-height: 1.7;                 /* Espaciado entre líneas */
+  padding: 20px;                    /* Espacio interno alrededor de todo */
 }
 
-/* Encabezado principal */
+
+/* =============================================
+   HEADER — Encabezado principal
+   Propiedades usadas: background-color, color,
+   text-align, padding, border-radius
+============================================= */
 header {
-  background-color: #2c3e50;        /* Fondo oscuro */
-  color: white;                     /* Texto en blanco */
-  text-align: center;               /* Centrado horizontal */
-  padding: 20px;                    /* Espacio interno */
-  border-radius: 8px;               /* Bordes redondeados */
+  background-color: #2c3e50;        /* Fondo oscuro azul/gris */
+  color: white;                     /* Texto blanco */
+  text-align: center;               /* Texto centrado */
+  padding: 30px 20px;               /* Espacio interno: 30px arriba/abajo, 20px lados */
+  border-radius: 10px;              /* Bordes redondeados */
+  margin-bottom: 20px;              /* Separación con lo que sigue */
 }
 
-/* Títulos dentro del contenido */
-h2 {
-  color: #2c3e50;                   /* Color consistente con el header */
-  margin-bottom: 10px;              /* Separación respecto al texto */
+header h1 {
+  font-size: 2em;                   /* Tamaño grande para el nombre */
+  margin-bottom: 8px;               /* Pequeño espacio bajo el título */
 }
 
-/* Secciones */
+.subtitulo {
+  font-size: 1em;                   /* Tamaño normal */
+  color: #a8c0d6;                   /* Azul claro, menos énfasis que el h1 */
+}
+
+
+/* =============================================
+   HR — Línea divisora
+============================================= */
+hr {
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 10px 0 20px 0;
+}
+
+
+/* =============================================
+   SECCIONES — Cada bloque de contenido
+   Propiedades usadas: background-color, border,
+   padding, margin, border-radius
+============================================= */
 section {
-  margin: 20px 0;                   /* Espacio entre secciones */
-  padding: 10px;                    /* Espacio interno */
-  background-color: #fff;           /* Fondo blanco para contraste */
-  border: 1px solid #ddd;           /* Borde gris claro */
-  border-radius: 6px;               /* Bordes suaves */
+  background-color: #ffffff;        /* Fondo blanco para contraste */
+  border: 1px solid #dde3ea;        /* Borde gris suave */
+  border-radius: 8px;               /* Esquinas redondeadas */
+  padding: 20px 25px;               /* Espacio interno */
+  margin: 0 0 20px 0;               /* Separación entre secciones (abajo) */
 }
 
-/* Listas de hobbies */
+
+/* =============================================
+   H2 — Títulos de sección
+   Propiedades usadas: color, font-size,
+   margin-bottom, text-align
+============================================= */
+h2 {
+  color: #2c3e50;                   /* Mismo color que el header */
+  font-size: 1.4em;                 /* Un poco más grande que el texto normal */
+  margin-bottom: 12px;              /* Separación del contenido debajo */
+  text-align: left;                 /* Alineado a la izquierda */
+  border-left: 4px solid #2c3e50;  /* Línea decorativa a la izquierda */
+  padding-left: 10px;               /* Espacio entre la línea y el texto */
+}
+
+
+/* =============================================
+   SPAN DESTACADO — Texto resaltado dentro de párrafo
+   Propiedades usadas: color, background-color
+============================================= */
+.destacado {
+  color: #2c3e50;
+  background-color: #d6e4f0;        /* Fondo azul claro para resaltar */
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+
+/* =============================================
+   LISTA DE HOBBIES
+   Propiedades usadas: list-style-type, padding,
+   margin (en li)
+============================================= */
 ul {
   list-style-type: square;          /* Viñetas cuadradas */
-  padding-left: 20px;               /* Espacio a la izquierda */
+  padding-left: 25px;               /* Espacio a la izquierda */
 }
 
 li {
-  margin-bottom: 5px;               /* Separación entre elementos */
+  margin-bottom: 8px;               /* Separación entre elementos de la lista */
+  font-size: 1em;
 }
 
-/* Imagen */
+
+/* =============================================
+   TARJETAS DE HABILIDADES
+   Propiedades usadas: display, background-color,
+   border, padding, margin, border-radius,
+   font-size, color
+============================================= */
+.tarjeta {
+  display: inline-block;            /* En línea pero con tamaño controlado */
+  background-color: #eaf1fb;        /* Fondo azul muy claro */
+  border: 1px solid #b3cde8;        /* Borde azul suave */
+  border-radius: 8px;               /* Esquinas redondeadas */
+  padding: 15px 20px;               /* Espacio interno */
+  margin: 8px 8px 8px 0;            /* Separación entre tarjetas */
+  width: 180px;                     /* Ancho fijo */
+  vertical-align: top;
+}
+
+.tarjeta h3 {
+  font-size: 1.1em;
+  color: #1a5276;                   /* Azul oscuro */
+  margin-bottom: 6px;
+}
+
+.tarjeta p {
+  font-size: 0.85em;
+  color: #555;
+}
+
+
+/* =============================================
+   ENLACE DE CONTACTO
+   Propiedades usadas: color, text-decoration
+   + :hover para interactividad
+============================================= */
+.mi-enlace {
+  color: #1a6eb5;                   /* Azul para el enlace */
+  text-decoration: none;            /* Sin subrayado por defecto */
+  font-weight: bold;
+  border-bottom: 2px solid transparent; /* Subrayado invisible */
+  transition: all 0.3s;             /* Transición suave al hacer hover */
+}
+
+.mi-enlace:hover {
+  color: #e74c3c;                   /* Cambia a rojo al pasar el mouse */
+  border-bottom-color: #e74c3c;     /* Aparece el subrayado */
+}
+
+
+/* =============================================
+   IMAGEN
+   Propiedades usadas: display, margin,
+   border-radius, border, box-shadow
+============================================= */
 img {
-  display: block;                   /* Evita que quede alineada con texto */
-  margin: 0 auto;                   /* Centra la imagen */
-  border-radius: 10px;              /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+  display: block;                   /* Evita que quede en línea con texto */
+  margin: 10px auto;                /* Centra la imagen horizontalmente */
+  border-radius: 12px;              /* Bordes redondeados */
+  border: 3px solid #2c3e50;        /* Borde oscuro decorativo */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Sombra suave */
 }
 
-/* Pie de página */
+
+/* =============================================
+   FOOTER — Pie de página
+   Propiedades usadas: text-align, color,
+   font-size, padding, margin-top,
+   background-color, border-radius
+============================================= */
 footer {
   text-align: center;               /* Centrado */
-  margin-top: 30px;                 /* Separación del contenido */
-  font-size: 0.9em;                 /* Texto un poco más pequeño */
-  color: #777;                      /* Gris tenue */
+  color: #888;                      /* Gris tenue */
+  font-size: 0.85em;                /* Texto más pequeño */
+  padding: 15px;                    /* Espacio interno */
+  margin-top: 10px;                 /* Separación del contenido */
+  background-color: #dde3ea;        /* Fondo gris claro */
+  border-radius: 8px;               /* Bordes redondeados */
 }
