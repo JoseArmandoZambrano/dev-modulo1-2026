@@ -1,57 +1,65 @@
-/* =============================================
-   RESET BÁSICO
-   Elimina márgenes y rellenos por defecto
-   del navegador en todos los elementos
-============================================= */
+/* ============================= */
+/* RESET GLOBAL */
+/* Elimina márgenes y paddings por defecto del navegador */
+/* y usa box-sizing para controlar mejor el tamaño de los elementos */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* El padding y border no agrandan el elemento */
+  box-sizing: border-box;
 }
 
 
-/* =============================================
-   BODY — Estilo general de la página
-   Propiedades usadas: font-family, background-color,
-   color, line-height, padding
-============================================= */
+/* ============================= */
+/* ESTILOS GENERALES DEL SITIO */
+/* Define fuente, color de fondo, color de texto */
+/* y separación general del contenido */
+/* ============================= */
 body {
-  font-family: 'roboto', Arial, sans-serif;   /* Fuente legible como respaldo */
-  background-color: #f0f4f8;        /* Fondo azul muy claro */
-  color: #333333;                   /* Color de texto principal */
-  line-height: 1.7;                 /* Espaciado entre líneas */
-  padding: 20px;                    /* Espacio interno alrededor de todo */
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333333;
+  line-height: 1.7;
+  padding: 20px;
 }
 
 
-/* =============================================
-   HEADER — Encabezado principal
-   Propiedades usadas: background-color, color,
-   text-align, padding, border-radius
-============================================= */
+/* ============================= */
+/* ENCABEZADO PRINCIPAL */
+/* Estilos del header superior del sitio */
+/* ============================= */
 header {
-  background-color: #2c3e50;        /* Fondo oscuro azul/gris */
-  color: white;                     /* Texto blanco */
-  text-align: center;               /* Texto centrado */
-  padding: 30px 20px;               /* Espacio interno: 30px arriba/abajo, 20px lados */
-  border-radius: 10px;              /* Bordes redondeados */
-  margin-bottom: 20px;              /* Separación con lo que sigue */
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
+
+/* ============================= */
+/* TITULO PRINCIPAL DEL HEADER */
+/* ============================= */
 header h1 {
-  font-size: 2em;                   /* Tamaño grande para el nombre */
-  margin-bottom: 8px;               /* Pequeño espacio bajo el título */
+  font-size: 2em;
+  margin-bottom: 8px;
 }
 
+
+/* ============================= */
+/* SUBTITULO DEL HEADER */
+/* ============================= */
 .subtitulo {
-  font-size: 1em;                   /* Tamaño normal */
-  color: #a8c0d6;                   /* Azul claro, menos énfasis que el h1 */
+  font-size: 1em;
+  color: #a8c0d6;
 }
 
 
-/* =============================================
-   HR — Línea divisora
-============================================= */
+/* ============================= */
+/* LINEA SEPARADORA */
+/* Personaliza el estilo de la etiqueta <hr> */
+/* ============================= */
 hr {
   border: none;
   border-top: 2px solid #ddd;
@@ -59,149 +67,154 @@ hr {
 }
 
 
-/* =============================================
-   SECCIONES — Cada bloque de contenido
-   Propiedades usadas: background-color, border,
-   padding, margin, border-radius
-============================================= */
+/* ============================= */
+/* ESTILO GENERAL DE SECCIONES */
+/* Cada sección de contenido tendrá fondo, borde */
+/* y espaciado interno */
+/* ============================= */
 section {
-  background-color: #ffffff;        /* Fondo blanco para contraste */
-  border: 1px solid #dde3ea;        /* Borde gris suave */
-  border-radius: 8px;               /* Esquinas redondeadas */
-  padding: 20px 25px;               /* Espacio interno */
-  margin: 0 0 20px 0;               /* Separación entre secciones (abajo) */
+  background-color: #ffffff;
+  border: 1px solid #dde3ea;
+  border-radius: 8px;
+  padding: 20px 25px;
+  margin: 0 0 20px 0;
 }
 
 
-/* =============================================
-   H2 — Títulos de sección
-   Propiedades usadas: color, font-size,
-   margin-bottom, text-align
-============================================= */
+/* ============================= */
+/* TITULOS DE SECCION */
+/* ============================= */
 h2 {
-  color: #2c3e50;                   /* Mismo color que el header */
-  font-size: 1.4em;                 /* Un poco más grande que el texto normal */
-  margin-bottom: 12px;              /* Separación del contenido debajo */
-  text-align: left;                 /* Alineado a la izquierda */
-  border-left: 4px solid #2c3e50;  /* Línea decorativa a la izquierda */
-  padding-left: 10px;               /* Espacio entre la línea y el texto */
+  color: #2c3e50;
+  font-size: 1.4em;
+  margin-bottom: 12px;
+  text-align: left;
+  border-left: 4px solid #2c3e50;
+  padding-left: 10px;
 }
 
 
-/* =============================================
-   SPAN DESTACADO — Texto resaltado dentro de párrafo
-   Propiedades usadas: color, background-color
-============================================= */
+/* ============================= */
+/* TEXTO DESTACADO */
+/* Se usa para resaltar palabras o frases importantes */
+/* ============================= */
 .destacado {
   color: #2c3e50;
-  background-color: #d6e4f0;        /* Fondo azul claro para resaltar */
+  background-color: #d6e4f0;
   padding: 1px 6px;
   border-radius: 4px;
 }
 
 
-/* =============================================
-   LISTA DE HOBBIES
-   Propiedades usadas: list-style-type, padding,
-   margin (en li)
-============================================= */
+/* ============================= */
+/* LISTAS */
+/* ============================= */
 ul {
-  list-style-type: square;          /* Viñetas cuadradas */
-  padding-left: 25px;               /* Espacio a la izquierda */
+  list-style-type: square;
+  padding-left: 25px;
 }
 
+
+/* ============================= */
+/* ELEMENTOS DE LISTA */
+/* ============================= */
 li {
-  margin-bottom: 8px;               /* Separación entre elementos de la lista */
+  margin-bottom: 8px;
   font-size: 1em;
 }
 
 
-/* =============================================
-   TARJETAS DE HABILIDADES
-   Propiedades usadas: display, background-color,
-   border, padding, margin, border-radius,
-   font-size, color
-============================================= */
+/* ============================= */
+/* TARJETAS DE CONTENIDO */
+/* Componentes tipo card para mostrar información */
+/* ============================= */
 .tarjeta {
-  display: inline-block;            /* En línea pero con tamaño controlado */
-  background-color: #eaf1fb;        /* Fondo azul muy claro */
-  border: 1px solid #b3cde8;        /* Borde azul suave */
-  border-radius: 8px;               /* Esquinas redondeadas */
-  padding: 15px 20px;               /* Espacio interno */
-  margin: 8px 8px 8px 0;            /* Separación entre tarjetas */
-  width: 180px;                     /* Ancho fijo */
+  display: inline-block;
+  background-color: #eaf1fb;
+  border: 1px solid #b3cde8;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 8px 8px 8px 0;
+  width: 180px;
   vertical-align: top;
 }
 
+
+/* ============================= */
+/* TITULO DE TARJETA */
+/* ============================= */
 .tarjeta h3 {
   font-size: 1.1em;
-  color: #1a5276;                   /* Azul oscuro */
+  color: #1a5276;
   margin-bottom: 6px;
 }
 
+
+/* ============================= */
+/* TEXTO DE TARJETA */
+/* ============================= */
 .tarjeta p {
   font-size: 0.85em;
   color: #555;
 }
 
 
-/* =============================================
-   ENLACE DE CONTACTO
-   Propiedades usadas: color, text-decoration
-   + :hover para interactividad
-============================================= */
+/* ============================= */
+/* ESTILO DE ENLACES PERSONALIZADOS */
+/* ============================= */
 .mi-enlace {
-  color: #1a6eb5;                   /* Azul para el enlace */
-  text-decoration: none;            /* Sin subrayado por defecto */
+  color: #1a6eb5;
+  text-decoration: none;
   font-weight: bold;
-  border-bottom: 2px solid transparent; /* Subrayado invisible */
-  transition: all 0.3s;             /* Transición suave al hacer hover */
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
 }
 
+
+/* ============================= */
+/* EFECTO HOVER EN ENLACES */
+/* Cambia color al pasar el mouse */
+/* ============================= */
 .mi-enlace:hover {
-  color: #e74c3c;                   /* Cambia a rojo al pasar el mouse */
-  border-bottom-color: #e74c3c;     /* Aparece el subrayado */
+  color: #e74c3c;
+  border-bottom-color: #e74c3c;
 }
 
 
-/* =============================================
-   IMAGEN
-   Propiedades usadas: display, margin,
-   border-radius, border, box-shadow
-============================================= */
+/* ============================= */
+/* ESTILO DE IMAGENES */
+/* ============================= */
 img {
-  display: block;                   /* Evita que quede en línea con texto */
-  margin: 10px auto;                /* Centra la imagen horizontalmente */
-  border-radius: 12px;              /* Bordes redondeados */
-  border: 3px solid #2c3e50;        /* Borde oscuro decorativo */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  display: block;
+  margin: 10px auto;
+  border-radius: 12px;
+  border: 3px solid #2c3e50;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 
-/* =============================================
-   FOOTER — Pie de página
-   Propiedades usadas: text-align, color,
-   font-size, padding, margin-top,
-   background-color, border-radius
-============================================= */
+/* ============================= */
+/* PIE DE PAGINA */
+/* ============================= */
 footer {
-  text-align: center;               /* Centrado */
-  color: #888;                      /* Gris tenue */
-  font-size: 0.85em;                /* Texto más pequeño */
-  padding: 15px;                    /* Espacio interno */
-  margin-top: 10px;                 /* Separación del contenido */
-  background-color: #dde3ea;        /* Fondo gris claro */
-  border-radius: 8px;               /* Bordes redondeados */
+  text-align: center;
+  color: #888;
+  font-size: 0.85em;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #dde3ea;
+  border-radius: 8px;
 }
 
-/* =============================================
-   SECCIÓN HERENCIA — Demostración visual
-   de herencia y sobreescritura en CSS
-============================================= */
+
+/* ============================= */
+/* CAJAS DE EJEMPLO (JERARQUIA) */
+/* Demuestra contenedores padre, hijo y nieto */
+/* ============================= */
 .caja-padre {
   background-color: #d6eaf8;
-  color: #1a5276;           /* Este color lo heredarán los hijos */
-  font-size: 1.1em;         /* Este tamaño también se hereda */
+  color: #1a5276;
+  font-size: 1.1em;
   padding: 15px;
   border-radius: 8px;
   border-left: 4px solid #1a5276;
@@ -212,7 +225,6 @@ footer {
   padding: 12px;
   margin-top: 10px;
   border-radius: 6px;
-  /* No declaramos color — lo hereda del padre automáticamente */
 }
 
 .caja-nieto {
@@ -220,6 +232,6 @@ footer {
   padding: 10px;
   margin-top: 10px;
   border-radius: 6px;
-  font-size: 0.85em;        /* Sobreescribe el tamaño heredado */
-  font-style: italic;       /* Agrega estilo propio */
+  font-size: 0.85em;
+  font-style: italic;
 }
