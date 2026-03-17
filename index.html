@@ -5,13 +5,14 @@
     <meta name="description" content="Primera página web de Armando - Proyecto final módulo 1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página Web</title>
-    <link href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Hola, soy Armando 👋</h1>
+        <h1>Hola, soy Armando Zambrano</h1>
         <p class="subtitulo">Estudiante de Ingeniería Informática · CUCEI</p>
     </header>
 
@@ -33,6 +34,23 @@
         </ul>
     </section>
 
+    <!-- SECCIÓN NUEVA: Idiomas -->
+    <section id="idiomas">
+        <h2>Idiomas</h2>
+        <div class="idioma">
+            <h3>Español</h3>
+            <p>Lengua <span class="destacado">nativa</span>.</p>
+        </div>
+        <div class="idioma">
+            <h3>Inglés</h3>
+            <p>Nivel <span class="destacado">intermedio</span>, en aprendizaje continuo.</p>
+        </div>
+        <div class="idioma">
+            <h3>Portugués</h3>
+            <p>Nivel <span class="destacado">básico</span>, aprendizaje autodidacta.</p>
+        </div>
+    </section>
+
     <section id="habilidades">
         <h2>Habilidades en desarrollo</h2>
         <div class="tarjeta">
@@ -41,12 +59,29 @@
         </div>
         <div class="tarjeta">
             <h3>CSS</h3>
-            <p>Estilos, colores, tipografía y box model.</p>
+            <!-- ACTUALIZADO: descripción más completa -->
+            <p>Herencia, selectores, tipografía y diseño visual.</p>
         </div>
         <div class="tarjeta">
             <h3>Git</h3>
             <p>Control de versiones y repositorios en GitHub.</p>
         </div>
+        <!-- TARJETA NUEVA -->
+        <div class="tarjeta">
+            <h3>Terminal</h3>
+            <p>Comandos básicos y flujo de trabajo con Git.</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NUEVA: Metas -->
+    <section id="metas">
+        <h2>Metas y proyectos futuros</h2>
+        <ul>
+            <li>Terminar la carrera de Ingeniería Informática</li>
+            <li>Desarrollar mi primer proyecto web completo</li>
+            <li>Alcanzar nivel avanzado de inglés</li>
+            <li>Participar en competencias de MTB</li>
+        </ul>
     </section>
 
     <section id="contacto">
@@ -60,21 +95,6 @@
     <section id="foto">
         <h2>MTB en buga</h2>
         <img src="images/foto.jpg" alt="Mi bicicleta de montaña" width="300">
-    </section>
-
-    <section id="herencia">
-        <h2>Herencia en CSS</h2>
-        <p>Este texto hereda la fuente, color y line-height definidos en el <span class="destacado">body</span>.</p>
-
-        <div class="caja-padre">
-            <p>Soy el elemento padre. Defino color azul y fuente grande.</p>
-            <div class="caja-hijo">
-                <p>Soy el hijo. Heredé el color azul de mi padre automáticamente.</p>
-                <div class="caja-nieto">
-                    <p>Soy el nieto. También heredé el color, pero sobreescribo el tamaño de fuente.</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <footer>

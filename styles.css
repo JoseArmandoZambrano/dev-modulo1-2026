@@ -207,31 +207,28 @@ footer {
 }
 
 
-/* ============================= */
-/* CAJAS DE EJEMPLO (JERARQUIA) */
-/* Demuestra contenedores padre, hijo y nieto */
-/* ============================= */
-.caja-padre {
-  background-color: #d6eaf8;
-  color: #1a5276;
-  font-size: 1.1em;
-  padding: 15px;
-  border-radius: 8px;
-  border-left: 4px solid #1a5276;
+/* =============================================
+   IDIOMAS
+============================================= */
+.idioma {
+    display: inline-block;
+    background-color: #eaf1fb;
+    border: 1px solid #b3cde8;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 8px 8px 8px 0;
+    width: 160px;
+    vertical-align: top;
+    text-align: center;
 }
 
-.caja-hijo {
-  background-color: #aed6f1;
-  padding: 12px;
-  margin-top: 10px;
-  border-radius: 6px;
+.idioma h3 {
+    color: #1a5276;
+    font-size: 1.1em;
+    margin-bottom: 6px;
 }
 
-.caja-nieto {
-  background-color: #85c1e9;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 6px;
-  font-size: 0.85em;
-  font-style: italic;
+.idioma p {
+    font-size: 0.85em;
+    color: #555;
 }
