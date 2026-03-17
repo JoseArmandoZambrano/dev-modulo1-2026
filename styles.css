@@ -16,7 +16,7 @@
    color, line-height, padding
 ============================================= */
 body {
-  font-family: Arial, sans-serif;   /* Fuente legible como respaldo */
+  font-family: 'roboto', Arial, sans-serif;   /* Fuente legible como respaldo */
   background-color: #f0f4f8;        /* Fondo azul muy claro */
   color: #333333;                   /* Color de texto principal */
   line-height: 1.7;                 /* Espaciado entre líneas */
@@ -192,4 +192,34 @@ footer {
   margin-top: 10px;                 /* Separación del contenido */
   background-color: #dde3ea;        /* Fondo gris claro */
   border-radius: 8px;               /* Bordes redondeados */
+}
+
+/* =============================================
+   SECCIÓN HERENCIA — Demostración visual
+   de herencia y sobreescritura en CSS
+============================================= */
+.caja-padre {
+  background-color: #d6eaf8;
+  color: #1a5276;           /* Este color lo heredarán los hijos */
+  font-size: 1.1em;         /* Este tamaño también se hereda */
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #1a5276;
+}
+
+.caja-hijo {
+  background-color: #aed6f1;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  /* No declaramos color — lo hereda del padre automáticamente */
+}
+
+.caja-nieto {
+  background-color: #85c1e9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 0.85em;        /* Sobreescribe el tamaño heredado */
+  font-style: italic;       /* Agrega estilo propio */
 }

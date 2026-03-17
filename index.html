@@ -5,6 +5,7 @@
     <meta name="description" content="Primera página web de Armando - Proyecto final módulo 1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primera Página Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -59,6 +60,21 @@
     <section id="foto">
         <h2>MTB en buga</h2>
         <img src="images/foto.jpg" alt="Mi bicicleta de montaña" width="300">
+    </section>
+
+    <section id="herencia">
+        <h2>Herencia en CSS</h2>
+        <p>Este texto hereda la fuente, color y line-height definidos en el <span class="destacado">body</span>.</p>
+
+        <div class="caja-padre">
+            <p>Soy el elemento padre. Defino color azul y fuente grande.</p>
+            <div class="caja-hijo">
+                <p>Soy el hijo. Heredé el color azul de mi padre automáticamente.</p>
+                <div class="caja-nieto">
+                    <p>Soy el nieto. También heredé el color, pero sobreescribo el tamaño de fuente.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
