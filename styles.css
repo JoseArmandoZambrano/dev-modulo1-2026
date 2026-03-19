@@ -153,9 +153,12 @@ li {
 /* ============================= */
 /* TEXTO DE TARJETA */
 /* ============================= */
-.tarjeta p {
-  font-size: 0.85em;
-  color: #555;
+.tarjeta {
+  background-color: #eaf1fb;
+  border: 1px solid #b3cde8;
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: 180px;
 }
 
 
@@ -211,15 +214,12 @@ footer {
    IDIOMAS
 ============================================= */
 .idioma {
-    display: inline-block;
-    background-color: #eaf1fb;
-    border: 1px solid #b3cde8;
-    border-radius: 8px;
-    padding: 15px 20px;
-    margin: 8px 8px 8px 0;
-    width: 160px;
-    vertical-align: top;
-    text-align: center;
+  background-color: #eaf1fb;
+  border: 1px solid #b3cde8;
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: 160px;
+  text-align: center;
 }
 
 .idioma h3 {
@@ -231,4 +231,65 @@ footer {
 .idioma p {
     font-size: 0.85em;
     color: #555;
+}
+
+/* ============================= */
+/* FLEXBOX - HEADER */
+/* ============================= */
+.header-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================= */
+/* FLEXBOX - TARJETAS DE HABILIDADES */
+/* ============================= */
+#habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#habilidades h2 {
+  align-items: center;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* ============================= */
+/* FLEXBOX - IDIOMAS */
+/* ============================= */
+#idiomas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.idiomas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* ============================= */
+/* FLEXBOX - CONTACTO */
+/* ============================= */
+.contacto-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .contacto-flex {
+    flex-direction: row;
+    gap: 20px;
+  }
 }

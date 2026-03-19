@@ -12,8 +12,12 @@
 <body>
 
     <header>
-        <h1>Hola, soy Armando Zambrano</h1>
-        <p class="subtitulo">Estudiante de Ingeniería Informática · CUCEI</p>
+        <div class="header-flex">
+            <div>
+                <h1>Hola, soy Armando Zambrano</h1>
+                <p class="subtitulo">Estudiante de Ingeniería Informática · CUCEI</p>
+            </div>
+        </div>
     </header>
 
     <hr>
@@ -34,43 +38,44 @@
         </ul>
     </section>
 
-    <!-- SECCIÓN NUEVA: Idiomas -->
     <section id="idiomas">
         <h2>Idiomas</h2>
-        <div class="idioma">
-            <h3>Español</h3>
-            <p>Lengua <span class="destacado">nativa</span>.</p>
-        </div>
-        <div class="idioma">
-            <h3>Inglés</h3>
-            <p>Nivel <span class="destacado">intermedio</span>, en aprendizaje continuo.</p>
-        </div>
-        <div class="idioma">
-            <h3>Portugués</h3>
-            <p>Nivel <span class="destacado">básico</span>, aprendizaje autodidacta.</p>
+        <div class="idiomas-container">
+            <div class="idioma">
+                <h3>Español</h3>
+                <p>Lengua <span class="destacado">nativa</span>.</p>
+            </div>
+            <div class="idioma">
+                <h3>Inglés</h3>
+                <p>Nivel <span class="destacado">intermedio</span>, en aprendizaje continuo.</p>
+            </div>
+            <div class="idioma">
+                <h3>Portugués</h3>
+                <p>Nivel <span class="destacado">básico</span>, aprendizaje autodidacta.</p>
+            </div>
         </div>
     </section>
 
     <section id="habilidades">
         <h2>Habilidades en desarrollo</h2>
-        <div class="tarjeta">
-            <h3>HTML</h3>
-            <p>Estructura y semántica de páginas web.</p>
-        </div>
-        <div class="tarjeta">
-            <h3>CSS</h3>
-            <!-- ACTUALIZADO: descripción más completa -->
-            <p>Herencia, selectores, tipografía y diseño visual.</p>
-        </div>
-        <div class="tarjeta">
-            <h3>Git</h3>
-            <p>Control de versiones y repositorios en GitHub.</p>
-        </div>
-        <!-- TARJETA NUEVA -->
-        <div class="tarjeta">
-            <h3>Terminal</h3>
-            <p>Comandos básicos y flujo de trabajo con Git.</p>
-        </div>
+        <div class="tarjetas-container">
+            <div class="tarjeta">
+                <h3>HTML</h3>
+                <p>Estructura y semántica de páginas web.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>CSS</h3>
+                <p>Herencia, selectores, tipografía y diseño visual.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Git</h3>
+                <p>Control de versiones y repositorios en GitHub.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Terminal</h3>
+                <p>Comandos básicos y flujo de trabajo con Git.</p>
+            </div>
+        </div>   
     </section>
 
     <!-- SECCIÓN NUEVA: Metas -->
@@ -86,10 +91,10 @@
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>¿Quieres ponerte en contacto?
+        <div class="contacto-flex">
             <a href="https://github.com/JoseArmandoZambrano" class="mi-enlace">github.com/JoseArmandoZambrano</a>
-           <a href="mailto:armandojose_zamu@hotmail.com" class="mi-enlace">armandojose_zamu@hotmail.com</a>
-        </p>
+            <a href="mailto:armandojose_zamu@hotmail.com" class="mi-enlace">armandojose_zamu@hotmail.com</a>
+        </div>
     </section>
 
     <section id="foto">
