@@ -242,26 +242,6 @@ footer {
   align-items: center;
 }
 
-/* ============================= */
-/* FLEXBOX - TARJETAS DE HABILIDADES */
-/* ============================= */
-#habilidades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#habilidades h2 {
-  align-items: center;
-}
-
-.tarjetas-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-}
-
 /* FLEXBOX - IDIOMAS */
 #idiomas {
   display: flex;
@@ -515,5 +495,28 @@ footer {
   /* Padding más generoso en secciones */
   section {
     padding: 20px 30px;
+  }
+}
+
+/* ============================= */
+/* CSS GRID - TARJETAS           */
+/* ============================= */
+.tarjetas-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* En móvil, una sola columna */
+@media (max-width: 600px) {
+  .tarjetas-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* En escritorio, las 4 en una fila */
+@media (min-width: 1024px) {
+  .tarjetas-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
