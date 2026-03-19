@@ -345,3 +345,99 @@ footer {
   color: #e74c3c;
   text-decoration: underline;
 }
+
+/* ============================= */
+/* NAVBAR - position: sticky     */
+/* ============================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 16px;
+}
+
+.nav-logo {
+  color: #a8c0d6;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #a8c0d6;
+  text-decoration: none;
+  font-size: 0.95em;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+
+/* ============================= */
+/* BADGE - position: absolute    */
+/* sobre position: relative      */
+/* ============================= */
+.tarjeta-destacada {
+  position: relative; /* necesario para que el badge se posicione dentro */
+}
+
+.badge-nuevo {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #2c3e50;
+  color: white;
+  font-size: 0.7em;
+  padding: 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+
+/* ============================= */
+/* BANNER COOKIES - position: fixed */
+/* ============================= */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2c3e50;
+  color: #f0f4f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  z-index: 999;
+  font-size: 0.9em;
+}
+
+.cookie-btn {
+  background-color: #1a6eb5;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+.cookie-btn:hover {
+  background-color: #145a9e;
+}
