@@ -2,165 +2,268 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Primera página web de Armando - Proyecto final módulo 1">
+    <meta name="description" content="Portfolio of José Armando Zambrano Muñoz — Computer Engineering student focused on cybersecurity and cloud architecture.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Armando Zambrano — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <span class="nav-logo">AZ</span>
-        <div class="nav-links">
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#metas">Metas</a>
-            <a href="#contacto">Contacto</a>
+        <a href="#inicio" class="nav-logo">AZ<span class="cursor-blink">_</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#sobre-mi">about</a>
+            <a href="#habilidades">skills</a>
+            <a href="#proyectos">projects</a>
+            <a href="#certificaciones">certifications</a>
+            <a href="#contacto">contact</a>
         </div>
     </nav>
 
-    <header>
-        <div class="header-flex">
-            <div>
-                <h1>Hola, soy Armando Zambrano</h1>
-                <p class="subtitulo">Estudiante de Ingeniería Informática · CUCEI</p>
+    <!-- ============================= -->
+    <!-- HERO: terminal simulada -->
+    <!-- ============================= -->
+    <header id="inicio">
+        <div class="terminal-window">
+            <div class="terminal-bar">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-amber"></span>
+                <span class="dot dot-green"></span>
+                <span class="terminal-title">armando@portafolio: ~</span>
             </div>
+            <div class="terminal-body">
+                <p class="line line-1"><span class="prompt">visitor@portfolio</span><span class="path">:~$</span> whoami</p>
+                <p class="line line-2 output">José Armando Zambrano Muñoz — Computer Engineering student, CUCEI</p>
+                <p class="line line-3"><span class="prompt">visitor@portfolio</span><span class="path">:~$</span> cat interests.txt</p>
+                <p class="line line-4 output">Cybersecurity · Cloud Architecture · Networking · Applied AI</p>
+                <p class="line line-5"><span class="prompt">visitor@portfolio</span><span class="path">:~$</span> <span class="cursor-blink">_</span></p>
+            </div>
+        </div>
+        <div class="hero-cta">
+            <a href="#proyectos" class="btn btn-primary">View projects</a>
+            <a href="https://github.com/JoseArmandoZambrano" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/jose-armando-zambrano-munoz-715b20356/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
         </div>
     </header>
 
-    <hr>
+    <main>
 
+    <!-- ============================= -->
+    <!-- SOBRE MI -->
+    <!-- ============================= -->
     <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Estudiante cursando <span class="destacado">5° semestre de Ingeniería Informática</span> en CUCEI.
-           Apasionado por la tecnología, los deportes al aire libre y los idiomas.</p>
-    </section>
+    <h2>About</h2>
+    <p class="lead">
+        I'm a <span class="destacado">7th-semester Computer Engineering</span> student at CUCEI, Universidad de Guadalajara, 
+        currently exploring different areas of software engineering with a growing focus on 
+        <span class="destacado">backend development</span>, <span class="destacado">cloud technologies</span>, and 
+        <span class="destacado">cybersecurity</span>.
+    </p>
+    <p class="lead">
+        I enjoy turning ideas into functional solutions through programming, system design, and structured problem-solving. 
+        Through academic projects, technical training, and hands-on labs, I've been building practical experience with 
+        <span class="destacado">software development</span>, <span class="destacado">databases</span>, 
+        <span class="destacado">cloud technologies</span>, and <span class="destacado">cybersecurity tools</span>.
+    </p>
+    <p class="lead">
+        I'm currently looking for opportunities where I can work on real-world challenges, contribute to a collaborative team, 
+        and continue developing my skills as a <span class="destacado">software engineer</span>.
+    </p>
+</section>
 
-    <section id="hobbies">
-        <h2>Mis hobbies</h2>
-        <ul>
-            <li>Practico MTB los fines de semana</li>
-            <li>Estudio inglés de lunes a viernes</li>
-            <li>Estoy aprendiendo portugués</li>
-            <li>Estoy aprendiendo a tocar la guitarra</li>
-        </ul>
-    </section>
 
-    <section id="idiomas">
-        <h2>Idiomas</h2>
-        <div class="idiomas-container">
-            <div class="idioma">
-                <h3>Español</h3>
-                <p>Lengua <span class="destacado">nativa</span>.</p>
-            </div>
-            <div class="idioma">
-                <h3>Inglés</h3>
-                <p>Nivel <span class="destacado">intermedio</span>, en aprendizaje continuo.</p>
-            </div>
-            <div class="idioma">
-                <h3>Portugués</h3>
-                <p>Nivel <span class="destacado">básico</span>, aprendizaje autodidacta.</p>
-            </div>
-        </div>
-    </section>
-
+    <!-- ============================= -->
+    <!-- HABILIDADES -->
+    <!-- ============================= -->
     <section id="habilidades">
-        <h2>Habilidades en desarrollo</h2>
-        <div class="tarjetas-container">
-            <div class="tarjeta tarjeta-destacada">
-                <span class="badge-nuevo">Lo sobresaliente</span>
-                <h3>HTML</h3>
-                <p>Estructura y semántica de páginas web.</p>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <ul><li>C#</li><li>Python</li></ul>
             </div>
-            <div class="tarjeta tarjeta-destacada">
-                <span class="badge-nuevo">Sobresalientex2</span>
-                <h3>CSS</h3>
-                <p>Herencia, selectores, tipografía y diseño visual.</p>
+            <div class="skill-card">
+                <h3>Backend</h3>
+                <ul><li>ASP.NET Core</li><li>Entity Framework Core</li></ul>
             </div>
-            <div class="tarjeta">
-                <h3>Git</h3>
-                <p>Control de versiones y repositorios en GitHub.</p>
+            <div class="skill-card">
+                <h3>Database</h3>
+                <ul><li>SQL</li><li>SQL Server</li></ul>
             </div>
-            <div class="tarjeta">
-                <h3>Terminal</h3>
-                <p>Comandos básicos y flujo de trabajo con Git.</p>
+            <div class="skill-card">
+                <h3>Cloud</h3>
+                <ul><li>Oracle Cloud Infrastructure</li><li>AWS</li></ul>
             </div>
-        </div>   
-    </section>
-
-    <!-- SECCIÓN NUEVA: Metas -->
-    <section id="metas">
-        <h2>Metas y proyectos futuros</h2>
-        <ul>
-            <li>Terminar la carrera de Ingeniería Informática</li>
-            <li>Desarrollar mi primer proyecto web completo</li>
-            <li>Alcanzar nivel avanzado de inglés</li>
-            <li>Participar en competencias de MTB</li>
-        </ul>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="contacto-flex">
-            <a href="https://github.com/JoseArmandoZambrano" class="mi-enlace">github.com/JoseArmandoZambrano</a>
-            <a href="mailto:armandojose_zamu@hotmail.com" class="mi-enlace">armandojose_zamu@hotmail.com</a>
+            <div class="skill-card">
+                <h3>Networking &amp; Security</h3>
+                <ul><li>Cisco CCNA</li><li>Kali Linux</li></ul>
+            </div>
+            <div class="skill-card">
+                <h3>Version Control</h3>
+                <ul><li>Git</li><li>GitHub</li></ul>
+            </div>
         </div>
     </section>
 
-    <section id="foto">
-        <h2>MTB en buga</h2>
-        <img src="images/foto.jpg" alt="Mi bicicleta de montaña" width="300">
+    <!-- ============================= -->
+    <!-- PROYECTOS -->
+    <!-- ============================= -->
+    <section id="proyectos">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-head">
+                    <h3>StyleStore</h3>
+                    <span class="status status-done">Completed</span>
+                </div>
+                <p>Desktop application for store management: products, clients, sales with a refund system,
+                suppliers, promotions, CSV-exportable reports, and database backup/restore.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PyQt5</span>
+                    <span class="tag">SQLite</span>
+                </div>
+                <!-- Replace the href with the real repo link for this project -->
+                <a href="https://github.com/JoseArmandoZambrano" class="project-link" target="_blank" rel="noopener">View code →</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
+                    <h3>Homelab NIDS</h3>
+                    <span class="status status-progress">In progress</span>
+                </div>
+                <p>Network anomaly detection system running on a homelab (ThinkCentre M720q).
+                Real traffic capture and analysis with Zeek and Kali, detection models built with Isolation Forest / SVM.</p>
+                <div class="tags">
+                    <span class="tag">Zeek</span>
+                    <span class="tag">Kali Linux</span>
+                    <span class="tag">Isolation Forest</span>
+                    <span class="tag">Python</span>
+                </div>
+                <a href="https://github.com/JoseArmandoZambrano" class="project-link" target="_blank" rel="noopener">View code →</a>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
+                    <h3>Gene Expression Clustering (DMD)</h3>
+                    <span class="status status-done">Completed</span>
+                </div>
+                <p>Applied unsupervised clustering (DBSCAN) and dimensionality reduction (PCA) to a gene
+                expression dataset, as part of Samsung Innovation Campus.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">PCA</span>
+                    <span class="tag">DBSCAN</span>
+                </div>
+                <a href="https://github.com/JoseArmandoZambrano" class="project-link" target="_blank" rel="noopener">View code →</a>
+            </article>
+
+        </div>
     </section>
 
-    <section id="musica">
-        <h2>Gustos musicales</h2>
+    <!-- ============================= -->
+    <!-- CERTIFICACIONES -->
+    <!-- ============================= -->
+    <section id="certificaciones">
+        <h2>Certifications</h2>
+        <p class="lead lead-small">Click a card to view the full certificate.</p>
+        <div class="certs-grid">
 
-        <div class="musica-container">
+            <!--
+              Cómo agregar tus certificados (ver README.md para más detalle):
+              1) Guarda la imagen del certificado en images/certs/ (ej: ccna.jpg)
+              2) Si también tienes el PDF, guárdalo ahí mismo (ej: ccna.pdf)
+              3) Actualiza data-img y el href de "Ver PDF" en cada tarjeta
+            -->
 
-            <div class="genero">
-                <h3>similar rock</h3>
-                <p>
-                    <a href="https://www.youtube.com/watch?v=CTAud5O7Qqk&list=RDCTAud5O7Qqk&start_radio=1" target="_blank" class="link-musica">
-                    Modest Mouse - Float On
-                    </a>
-                </p>
-            </div>
+            <button class="cert-card" data-img="images/certs/ccna.png" data-title="Cisco CCNA: Introduction to Networks">
+                <div class="cert-thumb" style="background-image:url('images/certs/ccna.png')">
+                    <span class="cert-thumb-fallback">CCNA</span>
+                </div>
+                <div class="cert-info">
+                    <h3>Cisco CCNA</h3>
+                    <p>Introduction to Networks</p>
+                </div>
+            </button>
 
-            <div class="genero">
-                <h3>regeton viejito</h3>
-                <p>
-                    <a href="https://www.youtube.com/watch?v=OTAvQI0n_no&list=RDOTAvQI0n_no&start_radio=1" target="_blank" class="link-musica">
-                    Zion - La Player
-                    </a>
-                </p>
-            </div>
+            <button class="cert-card" data-img="images/certs/oci.jpg" data-title="Oracle Cloud Infrastructure Foundations">
+                <div class="cert-thumb" style="background-image:url('images/certs/oci.jpg')">
+                    <span class="cert-thumb-fallback">OCI</span>
+                </div>
+                <div class="cert-info">
+                    <h3>Oracle Cloud Infrastructure</h3>
+                    <p>Foundations</p>
+                </div>
+            </button>
 
-            <div class="genero">
-                <h3>Desconozco el genero xd</h3>
-                <p>
-                    <a href="https://www.youtube.com/watch?v=PcgWbbjLL24&list=RDPcgWbbjLL24&start_radio=1" target="_blanck" class="link-musica">
-                        QUANDO VOCÊ SE FOI CHOREI
-                    </a>
-                </p>
-            </div>
+            <button class="cert-card" data-img="images/certs/epam.jpg" data-title="EPAM .NET NextGen MX">
+                <div class="cert-thumb" style="background-image:url('images/certs/epam.jpg')">
+                    <span class="cert-thumb-fallback">SIC</span>
+                </div>
+                <div class="cert-info">
+                    <h3>CENEVAL Certifica</h3>
+                    <p>Liderazgo SIC</p>
+                </div>
+            </button>
 
+            <button class="cert-card" data-img="images/certs/samsung.jpg" data-title="Samsung Innovation Campus">
+                <div class="cert-thumb" style="background-image:url('images/certs/samsung.jpg')">
+                    <span class="cert-thumb-fallback">SIC</span>
+                </div>
+                <div class="cert-info">
+                    <h3>Samsung Innovation Campus</h3>
+                    <p>Inteligencia Artificial</p>
+                </div>
+            </button>
+
+            <button class="cert-card" data-img="images/certs/sixsigma.jpg" data-title="Lean Six Sigma White Belt">
+                <div class="cert-thumb" style="background-image:url('images/certs/sixsigma.jpg')">
+                    <span class="cert-thumb-fallback">LSS</span>
+                </div>
+                <div class="cert-info">
+                    <h3>Lean Six Sigma</h3>
+                    <p>White Belt</p>
+                </div>
+            </button>
+
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ============================= -->
+    <!-- CONTACTO -->
+    <!-- ============================= -->
+    <section id="contacto">
+        <h2>Contact</h2>
+        <div class="contacto-flex">
+            <a href="mailto:armandojose_zamu@hotmail.com" class="mi-enlace">armandojose_zamu@hotmail.com</a>
+            <a href="https://github.com/JoseArmandoZambrano" class="mi-enlace" target="_blank" rel="noopener">github.com/JoseArmandoZambrano</a>
+            <a href="https://www.linkedin.com/in/jose-armando-zambrano-munoz-715b20356/" class="mi-enlace" target="_blank" rel="noopener">LinkedIn</a>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Armando — Todos los derechos reservados</p>
+        <p>© 2026 Armando Zambrano — Guadalajara, Jalisco, Mexico</p>
     </footer>
 
-    <div class="cookie-banner" id="cookieBanner">
-        <p>Este sitio usa cookies para mejorar tu experiencia.
-        <a href="#" class="mi-enlace">Más información</a>.
-        </p>
-        <button class="cookie-btn" onclick="document.getElementById('cookieBanner').style.display='none'">
-            Aceptar
-        </button>
+    <!-- ============================= -->
+    <!-- LIGHTBOX (certifications) -->
+    <!-- ============================= -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+        <img src="" alt="" id="lightboxImg">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
